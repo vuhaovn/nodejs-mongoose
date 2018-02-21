@@ -1,0 +1,7 @@
+extends layout
+block content
+	form(method='POST', action='/add')
+		.form-group
+			label Title:
+			input.form-control(name='title', type='text')
+		input.btn.btn-primary(type='submit', value='Submit')

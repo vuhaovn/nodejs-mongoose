@@ -1,0 +1,28 @@
+doctype html
+html
+	head
+		title #{title}
+		link(rel='stylesheet', href='/bower_components/bootstrap/dist/css/bootstrap.min.css')
+		link(rel='stylesheed', href='/css/style.css')
+	body
+		header
+			nav.navbar.navbar-expand-md.navbar-dark.bg-dark
+				.container
+					a.navbar-brand(href='/') Demo Mongoose &amp; Nodejs
+					button.navbar-toggler(type='button', data-toggle='collapse', data-target='#navbarsExampleDefault', aria-controls='navbarsExampleDefault', aria-expanded='false', aria-label='Toggle navigation')
+						span.navbar-toggler-icon
+					#navbarsExampleDefault.collapse.navbar-collapse
+						ul.navbar-nav.mr-auto
+							li.nav-item
+								a.nav-link(href='/') Home
+							li.nav-item
+								a.nav-link(href='/add') Add task
+		main#main
+			.container
+				block content
+		footer
+			.container
+				p Copyright &copy; 2018
+		script(src='/bower_components/jquery/dist/jquery.min.js')
+		script(src='/bower_components/bootstrap/dist/js/bootstrap.min.js')
+		script(src='/js/main.js')

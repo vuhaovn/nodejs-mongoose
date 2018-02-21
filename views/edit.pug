@@ -1,0 +1,8 @@
+extends layout
+block content
+	h1 #{title}
+	form(method='POST', action='/edit/' + task._id)
+		.form-group
+			label Title:
+			input.form-control(name='title', type='text', value=task.title)
+		input.btn.btn-primary(type='submit', value='Submit')
